@@ -1,4 +1,6 @@
-CREATE DATABASE chat_app_db;
+CREATE DATABASE cas_chat_app;
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE users(
     id uuid DEFAULT public.uuid_generate_v4 () NOT NULL UNIQUE,
